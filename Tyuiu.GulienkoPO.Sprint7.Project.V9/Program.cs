@@ -1,4 +1,4 @@
-namespace Project.V9
+namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
 {
     internal static class Program
     {

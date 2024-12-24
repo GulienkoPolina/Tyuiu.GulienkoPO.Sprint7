@@ -17,9 +17,10 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             InitializeComponent();
         }
 
-        public void buttonOk_Click(object sender, EventArgs e)
+        public void ButtonOk_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
     }
 }

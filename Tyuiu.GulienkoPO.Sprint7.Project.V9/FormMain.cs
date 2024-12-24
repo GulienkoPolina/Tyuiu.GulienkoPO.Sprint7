@@ -9,7 +9,7 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
     {
         public FormMain()
         {
-            InitializeComponent();
+            InitializeComponent(GetAxWindowsMediaPlayer1(), axWindowsMediaPlayer11, axWindowsMediaPlayer11, GetAxWindowsMediaPlayer11());
         }
 
         DataService ds = new DataService();
@@ -51,7 +51,7 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
 
                 if (File.Exists(FilePath))
                 {
-                    WMP.URL = FilePath;
+
                     textBoxFilePath.Text = FilePath;
                     textBoxName.Text = data[e.RowIndex, 1];
                     textBoxH.Text = data[e.RowIndex, 2];
@@ -61,7 +61,7 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
                 }
                 else
                 {
-                    MessageBox.Show("Ôàéë íå ñóùåñòâóåò", "Îøèáêà", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Видеофайл удалён", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch
@@ -91,12 +91,12 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             {
                 if (ds.DeleteInfo(dataGridViewPlaylist.SelectedCells[0].RowIndex))
                 {
-                    MessageBox.Show("Ôàéë óñïåøíî óäàëåí", "Îøèáêà", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    WMP.URL = string.Empty;
+                    MessageBox.Show("Видеофайл удалён", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
                 else
                 {
-                    MessageBox.Show("Ôàéë íå áûë óäàëåí", "Îøèáêà", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Видеофайл удалён", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
 
@@ -114,8 +114,19 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             }
             catch
             {
-                MessageBox.Show("Ñïèñîê ïóñò èëè ôàéë íå âûáðàí!", "Îøèáêà", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Список пуст или файл не выбран!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void panelWMP_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridViewPlaylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        
     }
 }

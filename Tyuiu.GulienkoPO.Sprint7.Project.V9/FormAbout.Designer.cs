@@ -42,10 +42,13 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             // 
             // pictureBox1
             // 
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Image = Properties.Resources.fc2d81cc_4ba1_4d3b_b9c8_762fec77cac8;
             pictureBox1.Location = new Point(14, 16);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(205, 332);
+            pictureBox1.Size = new Size(205, 181);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -54,9 +57,9 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             label1.AutoSize = true;
             label1.Location = new Point(237, 16);
             label1.Name = "label1";
-            label1.Size = new Size(204, 20);
+            label1.Size = new Size(297, 20);
             label1.TabIndex = 1;
-            label1.Text = "Разработчик: Гулиенко П. О.";
+            label1.Text = "Разработчик: Гулиенко Полина Олеговна";
             // 
             // label2
             // 
@@ -90,18 +93,18 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             label5.AutoSize = true;
             label5.Location = new Point(237, 197);
             label5.Name = "label5";
-            label5.Size = new Size(329, 20);
+            label5.Size = new Size(272, 20);
             label5.TabIndex = 5;
-            label5.Text = "Высшая школа цифровых технологий (с) 2024";
+            label5.Text = "Высшая школа цифровых технологий";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(237, 269);
             label6.Name = "label6";
-            label6.Size = new Size(314, 20);
+            label6.Size = new Size(294, 20);
             label6.TabIndex = 6;
-            label6.Text = "Внутреннее имя: Tyuiu.GulienkoPO.Sprint7.V9";
+            label6.Text = "Внутреннее имя: Tyuiu.GulienkoPO.Sprint7";
             // 
             // buttonOk
             // 
@@ -112,12 +115,13 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             buttonOk.TabIndex = 7;
             buttonOk.Text = "Ok";
             buttonOk.UseVisualStyleBackColor = true;
+            buttonOk.Click += ButtonOk_Click;
             // 
             // FormAbout
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(694, 365);
+            ClientSize = new Size(619, 365);
             Controls.Add(buttonOk);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -136,6 +140,12 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             ResumeLayout(false);
             PerformLayout();
         }
+
+        private void buttonOkClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private PictureBox pictureBox1;
@@ -146,5 +156,6 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
         private Label label5;
         private Label label6;
         private Button buttonOk;
+
     }
 }

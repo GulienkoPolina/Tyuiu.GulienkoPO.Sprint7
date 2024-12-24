@@ -136,6 +136,7 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             MinimizeBox = false;
             Name = "FormAbout";
             Text = "О программе";
+            Load += FormAbout_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

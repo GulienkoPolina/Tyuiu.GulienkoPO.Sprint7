@@ -22,5 +22,9 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             this.Close();
         }
 
+        private void FormAbout_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -121,7 +121,7 @@ namespace Tyuiu.GulienkoPO.Sprint7.Project.V9
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(619, 365);
+            ClientSize = new Size(661, 365);
             Controls.Add(buttonOk);
             Controls.Add(label6);
             Controls.Add(label5);
